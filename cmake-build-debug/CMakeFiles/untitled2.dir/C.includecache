@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/misha/CLionProjects/football/League.c
+Team.h
+/home/misha/CLionProjects/football/Team.h
+Match.h
+/home/misha/CLionProjects/football/Match.h
+stdio.h
+-
+stdlib.h
+-
+League.h
+/home/misha/CLionProjects/football/League.h
+
+/home/misha/CLionProjects/football/League.h
+Team.h
+/home/misha/CLionProjects/football/Team.h
+Match.h
+/home/misha/CLionProjects/football/Match.h
+stdbool.h
+-
+stdio.h
+-
+stdlib.h
+-
+
+/home/misha/CLionProjects/football/Match.h
+stdbool.h
+-
+Team.h
+/home/misha/CLionProjects/football/Team.h
+
+/home/misha/CLionProjects/football/Team.h
+

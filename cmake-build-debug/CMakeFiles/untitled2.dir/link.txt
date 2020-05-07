@@ -1,0 +1,1 @@
+/usr/bin/cc -g   CMakeFiles/untitled2.dir/main.c.o CMakeFiles/untitled2.dir/Match.c.o CMakeFiles/untitled2.dir/Team.c.o CMakeFiles/untitled2.dir/League.c.o  -o untitled2 
