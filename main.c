@@ -22,4 +22,5 @@ int main() {
                liga1->matches[i]->goalHost,liga1->matches[i]->goalGuest);
     }
     return 0;
+
 }

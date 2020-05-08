@@ -23,18 +23,16 @@ void LeagueDestroy(League *league) {
 }
 
 void read_teams(League *league, const char *file_name) {
-    league->teams = NULL;
-    league->NumMatches = 0;
+    league->teams = NULL; //pushed all variables and inits to the top
+    league->NumTeams = 0;
+    char *line = NULL;
+    size_t line_size = 0;
     FILE *fp = fopen(file_name, "r");
     if (!fp) {
         fprintf(stderr, "error in line %d, failed to open a file\n", __LINE__);
         exit(-1);
     }
-    char *line = NULL;
-    size_t size = 0;
-    size_t len = 0;
-
-    while ((len = getline(&line, &size, fp)) != EOF) {
+    while (getline(&line, &line_size, fp) != EOF) { //erased the 'len' variable
         league->teams = (Team **) realloc(league->teams, sizeof(Team));
         league->teams[league->NumMatches] = TeamCreate(line);
         league->NumMatches++;
